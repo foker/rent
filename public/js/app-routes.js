@@ -9,7 +9,7 @@ angular.module('rent')
     })
 
     .config(function(RestangularProvider){
-        RestangularProvider.setBaseUrl('/v1')
+        RestangularProvider.setBaseUrl('/api/v1');
     })
     .config(function($stateProvider, $urlRouterProvider){
 
