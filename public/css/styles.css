@@ -1,11 +1,59 @@
-body{
-    padding-top:70px;
+html, body{
+    width:100%;
 }
 
-.container{
-    max-width: 1000px;
+body {
+    padding-top: 70px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.row{
+    margin-bottom:20px;
 }
 
 .item{
-    margin-bottom:10px;
+    overflow: hidden;
+    padding:15px 0
+}
+
+.item .title{
+    margin-top:0;
+}
+
+.item img{
+    width:100%;
+}
+
+a{
+    cursor: pointer;
+}
+
+.item.odd {
+
+}
+
+.item-clear{
+    border-bottom:1px dashed #ccc;
+    clear:both
+}
+
+.cursor{
+    cursor:pointer;
+}
+
+.city-select.modal-body a{
+    display:block;
+}
+
+.right{
+    float:right
+}
+
+@media screen and (max-width:968px){
+    .item.odd{
+        border-bottom:1px solid #ccc;
+    }
 }
