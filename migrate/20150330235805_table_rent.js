@@ -9,6 +9,8 @@ exports.up = function(knex, Promise) {
       table.string('name', 255).notNullable();
       table.text('text').notNullable();
       table.string('hash', 32).notNullable();
+      table.number('city').notNullable();
+      table.number('type').notNullable();
   })
       .then(function(){
           return knex.raw(fs.readFileSync(__dirname + '/sql/rule_hash_check.sql'));

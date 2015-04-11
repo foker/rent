@@ -2,7 +2,7 @@ html, body{
     width:100%;
 }
 
-body {
+body > .container {
     padding-top: 70px;
 }
 

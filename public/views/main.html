@@ -1,14 +1,14 @@
 <div class="col-md-6 item" ng-cloak ng-class="{even: $odd, odd: $even}" ng-repeat-start="item in items.collection track by $index">
     <div class="col-md-2  col-sm-2 hidden-xs col-lg-2">
         <a href="#">
-            <img class="img-responsive" ng-if="item.avatar_img" src="{{item.avatar_img}}" alt="">
+            <img class="img-responsive" ng-if="item.avatar_img" ng-src="{{item.avatar_img}}" alt="">
         </a>
     </div>
     <div class="col-md-10 col-sm-10 col-xs-12 col-lg-10">
         <span class="date right">{{item.date | date:'dd.MM.yyyy'}}</span>
-        <a ng-if="item.vk_id" target="_blank" href="{{item.vk_id}}"><h4 class="title lead">{{item.name}}</h4></a>
+        <a ng-if="item.vk_id" target="_blank" ng-href="{{item.vk_id}}"><h4 class="title lead">{{item.name}}</h4></a>
         <p>{{item.text}}</p>
-        <a href="{{item.link}}" target="_blank">Подробнее вконтакте</a>
+        <a ng-href="{{item.link}}" target="_blank">{{item.link}}</a>
     </div>
 </div>
 
